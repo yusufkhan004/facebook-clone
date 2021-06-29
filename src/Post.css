@@ -8,6 +8,7 @@
 
 .post__image > img {
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .post__top {
@@ -17,8 +18,50 @@
   padding: 15px;
 }
 
-.post__topInfo > h3,
-.post__topInfo > p {
+.post__topInfo > h3 {
   margin: 0 auto auto 10px;
   font-size: medium;
+}
+
+.post__topInfo > p {
+  margin: 0 auto auto 10px;
+  font-size: small;
+  columns: gray;
+}
+
+.post__bottom {
+  padding: 0 15px 15px 15px;
+}
+
+.post__bottom > p {
+  margin: 0;
+}
+
+.post__options {
+  padding-top: 10px;
+  border-top: 1px solid lightgray;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: medium;
+  color: gray;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.post__option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  flex: 1;
+}
+
+.post__option > p {
+  font-size: small;
+  margin: 0;
+}
+
+.post__option:hover {
+  background-color: #eff2f5;
+  border-radius: 10px;
 }

@@ -1,4 +1,8 @@
 .storyReel {
   display: flex;
+  flex: 1;
   margin: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 32px;
 }

@@ -4,8 +4,8 @@
   padding: 0 8px;
   cursor: pointer;
   box-sizing: border-box;
-  /* height: 52px;
-  width: 344px; */
+  width: 344px;
+  height: 52px;
 }
 
 .sidebarRow > .MuiSvgIcon-root {

@@ -8,4 +8,6 @@ body {
 
 .app__body {
   display: flex;
+  /* //to hide sidebar */
+  /* justify-content: space-around; */
 }

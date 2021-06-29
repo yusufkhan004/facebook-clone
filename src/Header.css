@@ -1,7 +1,7 @@
 .header {
   display: flex;
   align-items: center;
-  padding: 5px 20px;
+  padding: 0px 20px;
   justify-content: space-between;
   position: sticky;
   background-color: white;
@@ -27,6 +27,13 @@
   padding: 10px;
   margin-left: 10px;
   border-radius: 33px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1260px) {
+  .header__input > input {
+    display: none;
+  }
 }
 
 .header__input > input {
@@ -44,6 +51,10 @@
 
 .header__option {
   display: flex;
+  position: relative;
+  height: 56px;
+  top: 0;
+  bottom: 0;
   align-items: center;
   padding: 0 30px;
   cursor: pointer;
@@ -53,7 +64,7 @@
   background-color: #eff2f5;
   border-radius: 5px;
   padding: 0 30px;
-  border-bottom: none;
+  border-bottom: 3.5px solid transparent;
 }
 .header__option > .MuiSvgIcon-root {
   color: gray;

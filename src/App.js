@@ -3,6 +3,7 @@ import "./App.css";
 import Feed from "./Feed";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
+import ChatSection from "./ChatSection";
 
 const App = () => {
   return (
@@ -13,9 +14,10 @@ const App = () => {
     <div className="app__body">
       <Sidebar />
       <Feed />
+      <ChatSection />
       {/* Sidebar */}
      {/* Feed */}
-     {/* Widgets */}
+     {/* ChatSection */}
     </div>
      
 

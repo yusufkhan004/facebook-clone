@@ -15,6 +15,7 @@ const Feed = () => {
             image="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"
             username="Yusuf"
             timestamp="12:30:05 pm"
+            message="Hello world, this is the first post of facebook clone for testing pusrpose, this is to test another liine for this post description part and i thnk it shud work"
         />
         <Post 
             profilePic="https://st.depositphotos.com/1428083/2946/i/600/depositphotos_29460297-stock-photo-bird-cage.jpg"

@@ -1,0 +1,37 @@
+.chat__colomn {
+  right: 0;
+  width: 360px;
+}
+
+.chat__top {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  justify-content: space-between;
+  padding: 15px 10px 5px 10px;
+}
+
+.chat__top > p {
+  padding: 5px;
+  margin: 0;
+  font-size: 17px;
+  color: #65676b;
+  font-weight: 600;
+}
+
+.chat__topIcons {
+  display: flex;
+  align-items: center;
+}
+
+.chat__topIcons IconButton {
+  margin-left: 10px;
+}
+
+.chatprofile {
+  font-size: xx-small;
+}
+
+/* .usercontact {
+  padding: 10px;
+} */

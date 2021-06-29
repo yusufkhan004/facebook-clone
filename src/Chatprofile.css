@@ -1,0 +1,13 @@
+.chatProfile {
+  display: flex;
+  padding: 10px;
+}
+
+.profilepic {
+  align-items: center;
+}
+
+.chatProfile > p {
+  align-items: center;
+  margin-left: 10px;
+}

@@ -30,7 +30,7 @@ const Header = () => {
             header__option--active">
                 <HomeRoundedIcon fontSize="large" />
             </div>
-            <div className="header__option">
+            <div className="header__option active">
                 <FlagRoundedIcon fontSize="large" />
             </div>
             <div className="header__option">
@@ -45,7 +45,7 @@ const Header = () => {
         </div>
         <div className="header__right">
             <div className="header__info">
-                <Avatar />
+                <Avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrMYvrFt8pkrbXTx-NwqTYIJIbe4s928-C1Q&usqp=CAU"/>
                 <h4>Yusuf Khan</h4>
             </div>
                 <IconButton>
