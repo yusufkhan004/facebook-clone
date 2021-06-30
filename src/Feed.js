@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import StoryReel from './StoryReel'
 import "./Feed.css"
 import MessageSender from './MessageSender'
 import Post from './Post'
+import db from './firebase'
 
 
 const Feed = () => {
@@ -23,11 +24,11 @@ const Feed = () => {
             posts.map((post) => (
                 <Post 
                     key={post.id}
-                    profilePic={post.profilePic}
-                    message={post.message}
-                    timestamp={post.timestamp}
-                    username={post.username}
-                    image={post.image}
+                    profilePic={post.data.profilePic}
+                    message={post.data.message}
+                    timestamp={post.data.timestamp}
+                    username={post.data.username}
+                    image={post.data.image}
                 />
             ))
         }
@@ -56,7 +57,7 @@ const Feed = () => {
             {/* storyReel */}
             {/* MessageSender */}
         </div>
-    )
+    );
 }
 
 export default Feed
