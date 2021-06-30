@@ -9,7 +9,7 @@
 }
 
 .sidebarRow > .MuiSvgIcon-root {
-  font-size: xx-small;
+  font-size: x-small;
   box-sizing: border-box;
 }
 
@@ -18,9 +18,10 @@
   border-radius: 10px;
 }
 
-.sidebarRow > h4 {
-  margin: 0 0 0 20px;
+.sidebarRow > p {
+  margin: 0 0 0 15px;
   font-weight: 600;
+  font-size: 15px;
 }
 
 /* .sidebarRow > .MuiSvgIcon-root */

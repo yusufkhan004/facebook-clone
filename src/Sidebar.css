@@ -1,4 +1,47 @@
 .sidebar {
-  padding: 25px 10px;
+  padding: 10px 8px;
   flex: 0.33;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebarRow {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 344px;
+  height: 52px;
+}
+
+/* .sidebarRow > .MuiSvgIcon-root {
+  font-size: x-small;
+  box-sizing: border-box;
+} */
+
+.sidebarRow:hover {
+  background-color: #e4e6eb;
+  border-radius: 10px;
+}
+
+.sidebarRow > p {
+  margin: 0 0 0 15px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.sidebarRow > .seemorediv {
+  color: gray;
+  align-content: center;
+  margin: 0;
+  justify-content: center;
+  padding: 2px;
 }
