@@ -4,10 +4,14 @@ import "./MessageSender.css"
 import VideoCallRoundedIcon from '@material-ui/icons/VideoCallRounded';
 import PhotoLibraryRoundedIcon from '@material-ui/icons/PhotoLibraryRounded';
 import InsertEmoticonRoundedIcon from '@material-ui/icons/InsertEmoticonRounded';
+import { useStateValue } from './StateProvider';
+
+
 const MessageSender = () => {
 
     const [input, setInput] = useState('');
     const [imageUrl, setImageUrl] = useState('');
+    const [{user}, dispatch] = useStateValue();
 
     const Hiddenbutton = (e) => {
         e.preventDefault();
@@ -24,12 +28,12 @@ const MessageSender = () => {
         <div className="messageSender">
             <div className="messageSender__top">
 
-                <Avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrMYvrFt8pkrbXTx-NwqTYIJIbe4s928-C1Q&usqp=CAU"/>
+                <Avatar src={user.photoURL} />
                 <form action="">
                     <input 
                     value={input} 
                     onChange= {(e) => setInput(e.target.value)}
-                    className="messageSender__input" placeholder="What's on your mind, Yusuf?" />
+                    className="messageSender__input" placeholder={`What's on your mind, ${user.displayName}?`} />
                      <input 
                      value = {imageUrl}
                      onChange= {(e) => setImageUrl(e.target.value)}

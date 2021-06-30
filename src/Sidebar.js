@@ -2,12 +2,17 @@ import React from 'react';
 import "./Sidebar.css";
 import SidebarRow from './SidebarRow';
 import ArrowDropDownCircleRoundedIcon from '@material-ui/icons/ArrowDropDownCircleRounded';
+import { useStateValue } from './StateProvider';
 
 const Sidebar = () => {
+
+    const [{user}, dispatch] = useStateValue();
+
+
     return (
         <div className="sidebar">
         <ul>
-        <li> <SidebarRow title="Yusuf Khan" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrMYvrFt8pkrbXTx-NwqTYIJIbe4s928-C1Q&usqp=CAU"/></li>
+        <li> <SidebarRow title={user.displayName} src={user.photoURL} /></li>
         <li> <SidebarRow title="COVID-19 Information Center" src="https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/tInzwsw2pVX.png"/></li>
         <li> <SidebarRow title="Find Friends" src="https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/-XF4FQcre_i.png"/></li>
         <li> <SidebarRow title="Groups" src="https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/mk4dH3FK0jT.png"/></li>

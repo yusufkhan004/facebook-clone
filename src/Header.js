@@ -1,6 +1,5 @@
 import React from 'react';
 import "./Header.css";
-import styled from "styled-components";
 import SearchIcon from '@material-ui/icons/Search';
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
 import FlagRoundedIcon from '@material-ui/icons/FlagRounded';
@@ -13,8 +12,12 @@ import AddIcon from '@material-ui/icons/Add';
 import ForumRoundedIcon from '@material-ui/icons/ForumRounded';
 import NotificationsActiveRoundedIcon from '@material-ui/icons/NotificationsActiveRounded';
 import ExpandMoreRoundedIcon from '@material-ui/icons/ExpandMoreRounded';
+import { useStateValue } from './StateProvider';
 
 const Header = () => {
+
+    const [{user}, dispatch] = useStateValue();
+
     return (
         <div className="header">
         <div className="header__left">
@@ -45,8 +48,8 @@ const Header = () => {
         </div>
         <div className="header__right">
             <div className="header__info">
-                <Avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrMYvrFt8pkrbXTx-NwqTYIJIbe4s928-C1Q&usqp=CAU"/>
-                <h4>Yusuf Khan</h4>
+                <Avatar src={user.photoURL} />
+                <h4>{user.displayName} </h4>
             </div>
                 <IconButton>
                 <AddIcon />

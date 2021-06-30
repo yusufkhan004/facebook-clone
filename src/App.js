@@ -5,9 +5,12 @@ import Header from "./Header";
 import Sidebar from "./Sidebar";
 import ChatSection from "./ChatSection";
 import Login from "./Login";
+import { useStateValue } from "./StateProvider";
 
 const App = () => {
-  const user = null;
+  
+  const [{user}, dispatch] = useStateValue();
+
   return (
     // BEM (block element modifier methodology) naming convention
     <div className="App">
