@@ -1,8 +1,13 @@
 .feed {
   flex: 1;
-  padding: 30px 32px;
+  /* padding: 30px 145px; */
+  align-content: center;
   display: flex;
+  margin: 0;
+  float: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 542px;
+  min-width: 320px;
 }

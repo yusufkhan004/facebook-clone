@@ -34,7 +34,7 @@ const Login = () => {
             alt="" />
             </div>
 
-            <button type="submit" onClick={signIn}>
+            <button onClick={signIn}>
                 SIGN IN
             </button>
         </div>

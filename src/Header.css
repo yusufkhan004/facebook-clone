@@ -60,10 +60,15 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1100px) {
+  .header__option {
+    padding: 0 20px;
+  }
+}
 .header__option:hover {
   background-color: #eff2f5;
   border-radius: 5px;
-  padding: 0 30px;
+  /* padding: 0 30px; */
   border-bottom: 3.5px solid transparent;
 }
 .header__option > .MuiSvgIcon-root {
@@ -92,4 +97,19 @@
 }
 .header__right {
   display: flex;
+}
+
+/* .Icon {
+  padding: 5px;
+  font-size: 24px;
+  color: black;
+} */
+
+.header__right > .header__right_icon {
+  color: black;
+  background-color: #e4e6eb;
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
 }

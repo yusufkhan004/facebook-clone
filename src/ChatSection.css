@@ -1,6 +1,15 @@
 .chat__colomn {
   right: 0;
   width: 360px;
+  min-width: 250px;
+  padding: 0;
+  float: right;
+}
+
+@media screen and (max-width: 900px) {
+  .chat__colomn {
+    display: none;
+  }
 }
 
 .chat__top {

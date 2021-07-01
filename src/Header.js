@@ -9,10 +9,14 @@ import SupervisedUserCircleOutlinedIcon from '@material-ui/icons/SupervisedUserC
 // import Avatar from '@material-ui/core/Avatar';
 import {Avatar,IconButton} from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';
+import SupervisorAccountRoundedIcon from '@material-ui/icons/SupervisorAccountRounded';
 import ForumRoundedIcon from '@material-ui/icons/ForumRounded';
 import NotificationsActiveRoundedIcon from '@material-ui/icons/NotificationsActiveRounded';
 import ExpandMoreRoundedIcon from '@material-ui/icons/ExpandMoreRounded';
 import { useStateValue } from './StateProvider';
+import {Icon, InlineIcon } from '@iconify/react'
+import facebookMessenger from '@iconify-icons/fa-brands/facebook-messenger';
+
 
 const Header = () => {
 
@@ -33,36 +37,35 @@ const Header = () => {
             header__option--active">
                 <HomeRoundedIcon fontSize="large" />
             </div>
-            <div className="header__option active">
+            {/* <div className="header__option active">
                 <FlagRoundedIcon fontSize="large" />
-            </div>
+            </div> */}
             <div className="header__option">
                 <SubscriptionsRoundedIcon fontSize="large" />
             </div>
             <div className="header__option">
-                <StorefrontOutlinedIcon fontSize="large" />
+                <SupervisorAccountRoundedIcon fontSize="large" />
             </div>
-            <div className="header__option">
+            {/* <div className="header__option">
                 <SupervisedUserCircleOutlinedIcon fontSize="large" />
-            </div>
+            </div> */}
         </div>
         <div className="header__right">
-            <div className="header__info">
-                <Avatar src={user.photoURL} />
-                <h4>{user.displayName} </h4>
-            </div>
-                <IconButton>
+                <IconButton className="header__right_icon">
                 <AddIcon />
                 </IconButton>
-                <IconButton>
-                <ForumRoundedIcon />
+
+                <IconButton className="header__right_icon">
+                <Icon icon={facebookMessenger} />
                 </IconButton>
-                <IconButton>
+                
+                <IconButton className="header__right_icon">
                 <NotificationsActiveRoundedIcon />
                 </IconButton>
-                <IconButton>
-                <ExpandMoreRoundedIcon />
-                </IconButton>
+            <div className="header__info">
+                <Avatar src={user.photoURL} />
+                {/* <h4>{user.displayName} </h4> */}
+            </div>
         </div>
         </div>
     )

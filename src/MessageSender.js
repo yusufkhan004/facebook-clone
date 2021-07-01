@@ -54,7 +54,7 @@ const MessageSender = () => {
                 <PhotoLibraryRoundedIcon style={{color: "#45bd62"}}/>
                 <h3>Photo/Video</h3>
                 </button>
-                <button className="messageSender__option">
+                <button className="messageSender__option hidden_messagesender">
                 <InsertEmoticonRoundedIcon style={{color: "#f7b928"}}/>
                 <h3>Feeling/Activity</h3>
                 </button>

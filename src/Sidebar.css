@@ -3,6 +3,13 @@
   flex: 0.33;
 }
 
+@media screen and (max-width: 1100px) {
+  .sidebar {
+    display: none;
+    min-width: 199px;
+  }
+}
+
 li {
   list-style: none;
 }
@@ -18,7 +25,7 @@ ul {
   padding: 0 8px;
   cursor: pointer;
   box-sizing: border-box;
-  width: 344px;
+  max-width: 344px;
   height: 52px;
 }
 
