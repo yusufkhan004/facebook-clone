@@ -1,13 +1,18 @@
 .feed {
   flex: 1;
-  /* padding: 30px 145px; */
+  float: left;
   align-content: center;
   display: flex;
+  position: relative;
   margin: 0;
-  float: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 542px;
-  min-width: 320px;
+  width: 45%;
 }
+
+/* .messagesender_section {
+  width: 45%;
+  margin: 0px;
+  padding: 0;
+} */

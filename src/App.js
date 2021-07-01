@@ -25,9 +25,6 @@ const App = () => {
         <Sidebar />
         <Feed />
         <ChatSection />
-        {/* Sidebar */}
-       {/* Feed */}
-       {/* ChatSection */}
       </div>
     </>
     )

@@ -19,7 +19,7 @@ const Feed = () => {
     return (
         <div className="feed">
         <StoryReel />
-        <MessageSender />
+        <MessageSender className="messagesender_section" />
         {
             posts.map((post) => (
                 <Post 

@@ -1,12 +1,16 @@
 .sidebar {
   padding: 10px 8px;
   flex: 0.33;
+  margin-left: 0;
+  position: relative;
+  width: 25%;
+  /* width: 80%; */
+  float: left;
 }
 
 @media screen and (max-width: 1100px) {
   .sidebar {
     display: none;
-    min-width: 199px;
   }
 }
 
@@ -25,8 +29,8 @@ ul {
   padding: 0 8px;
   cursor: pointer;
   box-sizing: border-box;
-  max-width: 344px;
   height: 52px;
+  /* width: 25%; */
 }
 
 /* .sidebarRow > .MuiSvgIcon-root {

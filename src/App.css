@@ -9,6 +9,7 @@ body {
 
 .app__body {
   display: flex;
-  /* //to hide sidebar */
-  /* justify-content: space-around; */
+  margin: 0;
+  padding: 0;
+  top: 0;
 }

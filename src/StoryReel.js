@@ -30,10 +30,6 @@ const StoryReel = () => {
                 profileSrc="https://api.time.com/wp-content/uploads/2019/04/mark-zuckerberg-time-100-2019.jpg?quality=85&zoom=2"
                 title="Mark Zukerburg"
             />
-            {/* story */}
-            {/* story */}
-            {/* story */}
-            {/* story */}
         </div>
     )
 }
