@@ -19,6 +19,7 @@ const Feed = () => {
     return (
         <div className="feed">
         <StoryReel />
+        <div className="inputandpost">
         <MessageSender className="messagesender_section" />
         {
             posts.map((post) => (
@@ -32,6 +33,8 @@ const Feed = () => {
                 />
             ))
         }
+        </div>
+       
         
         {/* <Post 
             profilePic="https://i.pinimg.com/originals/7d/65/ef/7d65ef04f5fbe7cfa26257d8c3cc2a48.jpg"

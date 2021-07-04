@@ -1,12 +1,12 @@
 .chat__colomn {
   right: 0;
-  width: 23%;
+  /* width: 23%; */
   /* width: 340px; */
   padding: 0;
   margin-right: 0;
-  display: block;
+  /* display: block;
   position: relative;
-  float: right;
+  float: right; */
   /* min-width: 20%; */
 }
 

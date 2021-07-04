@@ -1,18 +1,33 @@
 .feed {
-  flex: 1;
-  float: left;
+  /* flex: 1 1; */
+  /* float: left; */
   align-content: center;
   display: flex;
-  position: relative;
-  margin: 0;
+  /* position: relative; */
+  /* margin: 0 auto; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 45%;
+  /* width: fit-content; */
 }
 
-/* .messagesender_section {
-  width: 45%;
-  margin: 0px;
-  padding: 0;
+/* @media screen and (max-width: 897px) {
+  .feed {
+    margin: 0 auto;
+    padding: auto;
+    width: fit-content;
+  }
+} */
+
+.inputandpost {
+  width: min-content;
+  justify-content: center;
+  margin: auto;
+}
+
+/* @media screen and (max-width: 500px) {
+  .inputandpost {
+    padding: 0;
+    width: 100%;
+  }
 } */

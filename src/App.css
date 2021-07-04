@@ -7,9 +7,28 @@ body {
   width: 100vw;
 }
 
+.body {
+  flex-basis: 100%;
+  flex-wrap: nowrap;
+}
+
 .app__body {
   display: flex;
   margin: 0;
   padding: 0;
+  justify-content: space-between;
+  flex-wrap: nowrap;
   top: 0;
+}
+
+.app__body > :nth-child(1) {
+  flex: 1 1 23%;
+}
+
+.app__body > :nth-child(2) {
+  flex: 1 1 54%;
+}
+
+.app__body > :nth-child(3) {
+  flex: 1 1 23%;
 }

@@ -19,12 +19,14 @@ const App = () => {
       <Login />
     ):(
       <>
+      <div className="body">
       <Header />
 
       <div className="app__body">
         <Sidebar />
         <Feed />
         <ChatSection />
+      </div>
       </div>
     </>
     )

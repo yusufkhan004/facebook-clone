@@ -5,6 +5,7 @@
   cursor: pointer;
   box-sizing: border-box;
   /* width: 344px; */
+  white-space: nowrap;
   height: 52px;
 }
 

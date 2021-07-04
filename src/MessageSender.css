@@ -1,11 +1,11 @@
 .messageSender {
   display: flex;
-  margin-top: 30px;
+  margin: 30px auto;
   flex-direction: column;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
-  width: 70%;
+  /* width: fit-content; */
 }
 
 .messageSender__top {
@@ -22,16 +22,28 @@
 }
 
 .messageSender__top > form > input {
-  outline-width: 0;
   border: none;
-  padding: 10px 20px;
+  padding: 5px 20px;
   margin: 0 10px;
   border-radius: 999px;
   background-color: #eff2f5;
+  outline: none;
+  font-size: 16px;
+}
+
+:placeholder-shown {
+  font-weight: 500;
+  font-family: "Segoe UI";
+  font-size: 16px;
 }
 
 .messageSender__input {
   flex: 1;
+}
+
+.messageSender__top > .messageSender__input {
+  /* flex: 1; */
+  size: 40;
 }
 
 .messageSender__top > form > button {
@@ -64,6 +76,7 @@
   box-sizing: border-box;
   display: flex;
   border: none;
+  outline: none;
   align-items: center;
   border-radius: 10px;
   padding: 5px 20px;
@@ -84,7 +97,7 @@
 }
 
 @media screen and (max-width: 440px) {
-  .messageSender__option .hidden_messagesender {
+  .messageSender__bottombuttons > .hidden_messagesender {
     display: none;
   }
 }

@@ -25,7 +25,8 @@ const StoryReel = () => {
                 profileSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98AoAFgGgYwOp922_8xmtWJk52u0Sx7W2uooNIc-1pp3x1cwpOOtBBe-vUfFQ7BDLfZA&usqp=CAU"
                 title="Reed hastings"
             />
-            <Story 
+            <Story
+            className="endingstory" 
                 image="https://images.ctfassets.net/00i767ygo3tc/2dkNgtt47aIKUNaytzbFh6/dee6b9ac3dfd5e48cac4c33aaeb4512a/facebook-stories-for-business.png"
                 profileSrc="https://api.time.com/wp-content/uploads/2019/04/mark-zuckerberg-time-100-2019.jpg?quality=85&zoom=2"
                 title="Mark Zukerburg"

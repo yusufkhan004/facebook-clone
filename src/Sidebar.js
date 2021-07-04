@@ -8,9 +8,14 @@ const Sidebar = () => {
 
     const [{user}, dispatch] = useStateValue();
 
+    // const expand = () => {
+    //     document.getElementsByClassName("seemorebutton").innerHTML = 
+    // }
+
 
     return (
-        <div className="sidebar">
+        <div className="sidebarroot">
+<div className="sidebar">
         <ul>
         <li> <SidebarRow title={user.displayName} src={user.photoURL} /></li>
         <li> <SidebarRow title="COVID-19 Information Center" src="https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/tInzwsw2pVX.png"/></li>
@@ -23,7 +28,7 @@ const Sidebar = () => {
         <li> <SidebarRow title="Saved" src="https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/2uPlV4oORjU.png"/></li>
         <li> <SidebarRow title="Pages" src="https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/i7hepQ2OeZg.png"/></li>
         <li>
-        <div className="sidebarRow" >
+        <div className="sidebarRow seemorebutton" onClick="expand()">
             <div className="seemorediv">
             <ArrowDropDownCircleRoundedIcon fontSize="large"/> 
             </div>
@@ -56,6 +61,9 @@ const Sidebar = () => {
             </li>
             </ul>
         </div>
+        </div>
+
+        
     )
 }
 

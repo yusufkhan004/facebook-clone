@@ -1,8 +1,9 @@
 .post {
-  width: 70%;
-  margin-top: 15px;
+  /* width: ; */
+  margin: 15px auto;
   border-radius: 15px;
   background-color: white;
+  flex-direction: column;
   box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
 }
 
