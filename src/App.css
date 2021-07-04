@@ -4,7 +4,7 @@ body {
   font-family: "Segoe UI";
   background-color: #f0f2f5;
   /* height: 100vh; */
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 .body {
@@ -14,11 +14,11 @@ body {
 
 .app__body {
   display: flex;
+  /* margin-top: 59.5px; */
   margin: 0;
   padding: 0;
   justify-content: space-between;
   flex-wrap: nowrap;
-  top: 0;
 }
 
 .app__body > :nth-child(1) {

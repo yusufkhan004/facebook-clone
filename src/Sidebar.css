@@ -13,7 +13,7 @@
   flex: 0.44;
   width: 100%;
   /* position: absolute; */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 @media screen and (max-width: 1100px) {

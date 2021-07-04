@@ -5,6 +5,8 @@ import VideoCallRoundedIcon from '@material-ui/icons/VideoCallRounded';
 import PhotoLibraryRoundedIcon from '@material-ui/icons/PhotoLibraryRounded';
 import InsertEmoticonRoundedIcon from '@material-ui/icons/InsertEmoticonRounded';
 import { useStateValue } from './StateProvider';
+import db from './firebase'
+import firebase from 'firebase';
 
 
 const MessageSender = () => {
@@ -18,6 +20,13 @@ const MessageSender = () => {
 
         // some database stuff
 
+        db.collection('posts').add({
+            message: input,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            profilePic: user.photoURL,
+            username: user.displayName,
+            image: imageUrl,
+        })
         setInput('');
         setImageUrl('');
 
@@ -33,14 +42,17 @@ const MessageSender = () => {
                     <input 
                     value={input} 
                     onChange= {(e) => setInput(e.target.value)}
-                    className="messageSender__input" placeholder={`What's on your mind, ${user.displayName}?`} />
-                     <input 
-                     value = {imageUrl}
-                     onChange= {(e) => setImageUrl(e.target.value)}
-                     placeholder="Image URL (Optional)" />
-                     <button type="submit" onClick={Hiddenbutton}>
-                         Hidden Button
-                     </button>
+                    className="messageSender__input1" 
+                    placeholder={`What's on your mind, ${user.displayName}?`}    
+                    />
+                    <input 
+                    value = {imageUrl}
+                    onChange= {(e) => setImageUrl(e.target.value)}
+                    className="messageSender__input2" 
+                    placeholder="URL (Optional)" />
+                    <button type="submit" onClick={Hiddenbutton}>
+                        Hidden Button
+                    </button>
                 </form>
             </div>
 
