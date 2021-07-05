@@ -30,6 +30,7 @@ const Feed = () => {
                     timestamp={post.data.timestamp}
                     username={post.data.username}
                     image={post.data.image}
+                    like={post.data.Like}
                 />
             ))
         }

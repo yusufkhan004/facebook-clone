@@ -12,16 +12,6 @@ const Post = ({ profilePic, image, username, timestamp, message}) => {
     const [like, setLike] = useState(false);
     const [count, setCount] = useState(0);
 
-    // const likebutton = () => {
-    //     if(like === false){
-    //         setCounter(count+1)
-    //         setLike(true)
-    //     }else{
-    //         setCounter(count-1)
-    //         setLike(false)
-    //     }
-    //     return count;
-    // }
 
     const handleLike = (e) => {
         e.preventDefault();
@@ -35,8 +25,6 @@ const Post = ({ profilePic, image, username, timestamp, message}) => {
         return count;
     }
     
-
-    // console.log(handleLike);
 
     return (
         <div className="post">
@@ -55,14 +43,15 @@ const Post = ({ profilePic, image, username, timestamp, message}) => {
             </div>
 
             <div className="post__options">
-                <button className="post__option"
+                <div className="post__option"
                 onClick = {e => handleLike(e)}
-                // onClick={ likebutton }
+                style={(like===true)?{color: "#1877f2"}: null}
+                // {(count===1)? {style={color:'#1877f2'}}: null}
                 >
                 <ThumbUpRoundedIcon />
                 <p>Like</p>
                 <p>{count}</p>
-                </button>
+                </div>
                 <div className="post__option">
                 <CommentRoundedIcon />
                 <p>Comment</p>
