@@ -28,7 +28,7 @@ const Sidebar = () => {
         <li> <SidebarRow title="Saved" src="https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/2uPlV4oORjU.png"/></li>
         <li> <SidebarRow title="Pages" src="https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/i7hepQ2OeZg.png"/></li>
         <li>
-        <div className="sidebarRow seemorebutton" onClick="expand()">
+        <div className="sidebarRow seemorebutton">
             <div className="seemorediv">
             <ArrowDropDownCircleRoundedIcon fontSize="large"/> 
             </div>

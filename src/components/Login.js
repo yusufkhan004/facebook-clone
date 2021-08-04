@@ -34,8 +34,9 @@ const Login = () => {
             alt="" />
             </div>
 
+
             <button onClick={signIn}>
-                SIGN IN
+                Sign with Google
             </button>
         </div>
     )
